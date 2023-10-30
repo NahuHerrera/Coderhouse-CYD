@@ -28,7 +28,7 @@ body{
 /*! Index */
 .principal{
     background-color: #6495ED;
-    background-image: url(/img/banner2.png);
+    background-image: url(../img/banner2.png);
     background-position: center;
     background-size: cover;
     height: 600px;
