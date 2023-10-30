@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/*!Colores
+.azul { #6495ED };
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+}
+
+/*! Header / Barra de Navegacion*/
+.navegacion{
+  display: flex;
+  justify-content: space-between; 
+}
+
+
+/*! Index */
+.principal{
+    background-color: #6495ED;
+    background-image: url(/img/banner2.png);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.principal h2{
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+}
+.principal a{
+    color: black;
+    font-size: 25px;
+}
+
+.sponsors{
+    height: 50px;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+.sponsors h2{
+    color: #6495ED;
+    font-size: 25px;
+}
+.destacadas{
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    background-color: #6495ED;
+}
+.destacadas h2{
+    color: white;
+}
+/*! Nosotros */
+.historia{
+    background-color: #6495ED;
+    height: 426px;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.logros{
+    background-color: white;
+    height: 426px;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    color: #6495ED;
+    font-weight: bold;
+}
+.logros-conseguidos{
+    height: 426px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #6495ED;
+    color: white;
+}
+.logros-conseguidos
+.datos{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    border: 3px solid white;
+    border-radius: 15px;
+    justify-content: space-between;
+    text-align: center;
+    padding: 8px;
+}
+
+.datos-numero{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+.grid-galeria{
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    grid-auto-rows: 250px;
+    gap: 20px;
+    padding: 20px; 
+    background-color: white;
+
+}
+.grid-galeria div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-4{
+    grid-row: span 2;
+}
+
+/*! Equipos */
+.container-banner{
+    width: 100%;
+    height: 426px;
+    background-image: url(/img/bannerequipo.jpg);
+    background-position: center;
+}
+.principal-equipo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding: 15px 10px;
+
+}
+.titulo-juego{
+    font-size: 30px;
+    font-weight: bold;
+}
+.historia-juego{
+    font-size: 20px;
+    padding: 0 30% 0 30%;
+}
+.equipo{
+    display: flex;
+    flex-direction: column;
+    padding: 20px ;
+}
+.lista-jugadores{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.lista-jugadores li{
+    height: 150px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 54px 10px rgba(0, 0, 0, 0.1);
+   
+}
+
+.nombre-completo{
+    font-weight: light;
+    font-size: 25px;
+}
+.tag{
+    font-weight: lighter;
+}
+
+/*! Noticias */
+.container-banner-noticias{
+    width: 100%;
+    height: 426px;
+    background-image: url(/img/bannernoticias.jpeg);
+}
+.titulo-noticias{
+    text-align: center;
+    padding: 20px 20px;
+}
+.container-resultados{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.tarjeta-resultados{
+    width: 300px;
+    border: 1px solid #6495ED;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.resultado{
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+/*! Contacto */
+.formulario{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #6495ED;
+}
+.boton{
+    background-color: #6495ED;
+    border: solid #6495ED;
+    color: white;
+    font-family:'Roboto', sans-serif ;
+    padding: 3px;
+    border-radius: 6px;
+}
+.boton:hover{
+    cursor: pointer;
+}
+/*! Footer */
+footer{
+    height: 200px;
+    width: 100%;
+    background-color: #3a3939;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+}
+footer p{
+    color: white;
+    padding-bottom: 20px;
+}
+footer a{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+}
+
+
+/*! Media Queries */
+
+@media screen and (max-width:697px) {
+    .principal h2{
+        font-size: 30px;
+    }
+    .sponsors h2{
+        font-size:15px ;
+    }
+    .principal a{
+        font-size:15px;
+    }
+}
+
+@media screen and (max-width:846px){
+
+    .historia p{
+        font-size: 20px;
+    }
+
+    .logros p{
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width:1105px){
+    
+    .lista-jugadores{
+        flex-direction: column;
+        align-items: ;
+        padding-left: 0;
+    }
+    .lista-jugadores li{
+        width: 100% ;
+    }
+    .nombre-completo{
+        font-size: 20px;
+    }
+    .tag{
+        font-size: 15px;
+    }
+    .historia-juego{
+        padding: 0 10% 0 10%;
+    }
+    .container-banner{
+        width: 100%;
+        height: 213px;
+        background-position: center;
+    }
+    .container-banner-noticias{
+        width: 100%;
+        height: 213px;
+        background-position: center;
+    }
+    .container-resultados{
+        flex-direction: column;
+        align-items: center;
+      }
+}
+
+@media screen and (max-width:500px){
+
+    .historia p{
+        font-size: 15px;
+    }
+
+    .logros p{
+        font-size: 15px;
+    }
+}
