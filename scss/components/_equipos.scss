@@ -1,0 +1,48 @@
+.container-banner{
+    width: 100%;
+    height: 426px;
+    background-image: url(../img/bannerequipo.jpg);
+    background-position: center;
+}
+
+.principal-equipo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding: 15px 10px;
+    h2{
+        font-size: 30px;
+        font-weight: bold;  
+    }
+    p{
+        font-size: 20px;
+        padding: 0 30% 0 30%;
+    }
+}
+.equipo{
+    display: flex;
+    flex-direction: column;
+    padding: 20px ;
+}
+.lista-jugadores{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    li{
+        height: 150px;
+        width: 300px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 1px 54px 10px rgba(0, 0, 0, 0.1);
+        div{
+            h3{
+                font-weight: ligh;
+                font-size: 25px; 
+            }
+            p{
+                font-weight: lighter;   
+            }
+        }
+    }
+}

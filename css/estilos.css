@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  width: 100%;
+  position: relative; }
+
+.navegacion {
+  display: flex;
+  justify-content: space-between; }
+
+.principal {
+  background-color: #6495ED;
+  background-image: url(../img/banner2.png);
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .principal h2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: black; }
+  .principal a {
+    color: black;
+    font-size: 25px; }
+
+.sponsors {
+  height: 50px;
+  width: 100%;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 10px; }
+  .sponsors h2 {
+    color: #6495ED;
+    font-size: 25px; }
+
+footer {
+  height: 200px;
+  width: 100%;
+  background-color: #3a3939;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 0; }
+  footer p {
+    color: white;
+    padding-bottom: 20px; }
+  footer a {
+    text-decoration: none;
+    padding: 20px;
+    color: white; }
+
+.historia {
+  background-color: #6495ED;
+  height: 426px;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  font-weight: bold; }
+
+.logros {
+  background-color: white;
+  height: 426px;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  color: #6495ED;
+  font-weight: bold; }
+
+.logros-conseguidos {
+  height: 426px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #6495ED;
+  color: white; }
+  .logros-conseguidos .datos {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    border: 3px solid white;
+    border-radius: 15px;
+    justify-content: space-between;
+    text-align: center;
+    padding: 8px; }
+  .logros-conseguidos .datos-numero {
+    font-size: 40px;
+    font-weight: bold; }
+
+.grid-galeria {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  gap: 20px;
+  padding: 20px;
+  background-color: white; }
+  .grid-galeria div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.img-4 {
+  grid-row: span 2; }
+
+.container-banner {
+  width: 100%;
+  height: 426px;
+  background-image: url(../img/bannerequipo.jpg);
+  background-position: center; }
+
+.principal-equipo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  padding: 15px 10px; }
+  .principal-equipo h2 {
+    font-size: 30px;
+    font-weight: bold; }
+  .principal-equipo p {
+    font-size: 20px;
+    padding: 0 30% 0 30%; }
+
+.equipo {
+  display: flex;
+  flex-direction: column;
+  padding: 20px; }
+
+.lista-jugadores {
+  display: flex;
+  list-style: none;
+  justify-content: space-around; }
+  .lista-jugadores li {
+    height: 150px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 54px 10px rgba(0, 0, 0, 0.1); }
+    .lista-jugadores li div h3 {
+      font-weight: ligh;
+      font-size: 25px; }
+    .lista-jugadores li div p {
+      font-weight: lighter; }
+
+.container-banner-tienda {
+  width: 100%;
+  height: 426px;
+  background-image: url(../img/bannernoticias.jpeg); }
+
+.titulo-tienda {
+  text-align: center;
+  padding: 20px 20px; }
+
+.productos {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 50px; }
+
+.tarjeta-producto {
+  text-align: center;
+  max-width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px; }
+  .tarjeta-producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px; }
+  .tarjeta-producto h2 {
+    font-size: 20px;
+    padding-top: 5px; }
+  .tarjeta-producto:hover {
+    cursor: pointer;
+    transition: all 400ms ease;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%); }
+
+.boton-compra {
+  background-color: #6495ED;
+  border: solid #6495ED;
+  color: white;
+  padding: 3px;
+  border-radius: 6px; }
+  .boton-compra:hover {
+    background-color: #000;
+    color: #6495ED;
+    border: solid #000; }
+
+.formulario {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #6495ED; }
+
+.boton {
+  background-color: #6495ED;
+  border: solid #6495ED;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  padding: 3px;
+  border-radius: 6px; }
+
+@media screen and (max-width: 697px) {
+  .principal h2 {
+    font-size: 30px; }
+  .principal a {
+    font-size: 15px; }
+  .sponsors h2 {
+    font-size: 15px; } }
+
+@media screen and (max-width: 1105px) {
+  .lista-jugadores {
+    flex-direction: column;
+    padding-left: 0; }
+    .lista-jugadores li {
+      width: 100%; }
+  .principal-equipo p {
+    padding: 0 10% 0 10%; }
+  .container-banner {
+    width: 100%;
+    height: 213px;
+    background-position: center; } }
+
+@media screen and (max-width: 846px) {
+  .historia p {
+    font-size: 20px; }
+  .logros p {
+    font-size: 20px; } }
+
+@media screen and (max-width: 500px) {
+  .historia p {
+    font-size: 20px; }
+  .logros p {
+    font-size: 20px; } }
+
+@media screen and (max-width: 900px) {
+  .productos {
+    flex-direction: column; }
+  .container-banner-tienda {
+    width: 100%;
+    height: 213px;
+    background-position: center; } }
