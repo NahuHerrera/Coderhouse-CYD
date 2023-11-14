@@ -35,22 +35,20 @@
     align-items: center;
     background-color: #6495ED;
     color: white;
-    
-    .datos{
-        display: flex;
-        flex-direction: row;
-        width: 300px;
-        border: 3px solid white;
-        border-radius: 15px;
-        justify-content: space-between;
-        text-align: center;
-        padding: 8px;
-    }
-
-    .datos-numero{
-        font-size: 40px;
-        font-weight: bold;
-    }
+}
+.datos{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    border: 3px solid white;
+    border-radius: 15px;
+    justify-content: space-between;
+    text-align: center;
+    padding: 8px;
+}
+.datos-numero{
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .grid-galeria{
