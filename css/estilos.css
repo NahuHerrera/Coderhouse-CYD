@@ -31,7 +31,11 @@ body {
     color: black; }
   .principal a {
     color: black;
-    font-size: 25px; }
+    font-size: 20px;
+    text-decoration: underline dotted;
+    transition: transform 300ms; }
+    .principal a:hover {
+      transform: scale(1.2); }
 
 .sponsors {
   height: 50px;
@@ -219,7 +223,8 @@ footer {
   max-width: 300px;
   padding: 20px;
   border: 1px solid #ccc;
-  border-radius: 8px; }
+  border-radius: 8px;
+  transition: all 500ms; }
   .tarjeta-producto img {
     max-width: 100%;
     height: auto;
@@ -229,7 +234,6 @@ footer {
     padding-top: 5px; }
   .tarjeta-producto:hover {
     cursor: pointer;
-    transition: all 400ms ease;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
     transform: translateY(-3%); }
 
@@ -280,11 +284,13 @@ footer {
   font-family: 'Roboto', sans-serif;
   padding: 3px 16px;
   border-radius: 6px;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  transition: transform 300ms; }
   .boton:hover {
     background-color: white;
     border: solid white;
-    color: #6495ED; }
+    color: #6495ED;
+    transform: scale(1.1); }
 
 @media screen and (max-width: 697px) {
   .principal h2 {

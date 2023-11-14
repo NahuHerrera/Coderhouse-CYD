@@ -20,6 +20,7 @@
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
+    transition: all 500ms;
 
     img{
         max-width: 100%;
@@ -34,7 +35,6 @@
 
     &:hover{
         cursor: pointer;
-        transition: all 400ms ease;
         box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
         transform: translateY(-3%);
     }

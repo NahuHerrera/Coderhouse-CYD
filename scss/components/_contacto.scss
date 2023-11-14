@@ -45,11 +45,15 @@
     padding: 3px 16px;
     border-radius: 6px;
     margin-top: 1rem;
+    transition: transform 300ms;
 
     &:hover{
         background-color: white;
         border: solid white;
         color: $color-primario;
+        transform: scale(1.1);
     }
+
+    
 }
 
