@@ -1,18 +1,55 @@
 .formulario{
-    height: 500px;
+    height: auto;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    color: $color-primario;
+    color: black;
+    background-image: url(/img/banner2.png);
+    background-position: center;
+    
+    
+}
+.formulario{
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 300px;
+        margin: 0 auto;
+        div{
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem; 
+            margin-top: 0.5rem;
+        
+            &:nth-child(3){
+                input{
+                    width: 206.44px;
+                }
+            }
+        }
+    }
 }
 
+.div-boton{
+    justify-content: center !important;
+}
 .boton{
-    background-color: $color-primario;
-    border: solid $color-primario;
+    background-color: black;
+    border: solid black;
     color: white;
     font-family:'Roboto', sans-serif ;
-    padding: 3px;
+    padding: 3px 16px;
     border-radius: 6px;
+    margin-top: 1rem;
+
+    &:hover{
+        background-color: white;
+        border: solid white;
+        color: $color-primario;
+    }
 }
+

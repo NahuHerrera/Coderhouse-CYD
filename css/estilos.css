@@ -19,7 +19,7 @@ body {
   background-image: url(../img/banner2.png);
   background-position: center;
   background-size: cover;
-  height: 600px;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -46,22 +46,52 @@ body {
     font-size: 25px; }
 
 footer {
-  height: 200px;
+  height: auto;
   width: 100%;
   background-color: #3a3939;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  position: relative;
-  bottom: 0; }
-  footer p {
-    color: white;
-    padding-bottom: 20px; }
-  footer a {
+  align-items: center; }
+
+.contenedor-footer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%; }
+
+.redes-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 16px; }
+  .redes-footer div p {
+    font-size: 20px;
+    color: #808080; }
+  .redes-footer div a {
+    font-size: 25px;
+    padding: 10px;
+    color: #808080; }
+    .redes-footer div a:hover {
+      color: #6495ED; }
+
+.paginas-footer {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column; }
+  .paginas-footer a {
     text-decoration: none;
-    padding: 20px;
-    color: white; }
+    color: #808080;
+    padding-right: 5px; }
+    .paginas-footer a:hover {
+      text-decoration: underline #6495ED; }
+
+.copyright {
+  color: #808080; }
 
 .historia {
   background-color: #6495ED;
@@ -213,21 +243,46 @@ footer {
     border: solid #000; }
 
 .formulario {
-  height: 500px;
+  height: auto;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  color: #6495ED; }
+  color: black;
+  background-image: url(/img/banner2.png);
+  background-position: center; }
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 300px;
+  margin: 0 auto; }
+  .formulario form div {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 0.5rem; }
+    .formulario form div:nth-child(3) input {
+      width: 206.44px; }
+
+.div-boton {
+  justify-content: center !important; }
 
 .boton {
-  background-color: #6495ED;
-  border: solid #6495ED;
+  background-color: black;
+  border: solid black;
   color: white;
   font-family: 'Roboto', sans-serif;
-  padding: 3px;
-  border-radius: 6px; }
+  padding: 3px 16px;
+  border-radius: 6px;
+  margin-top: 1rem; }
+  .boton:hover {
+    background-color: white;
+    border: solid white;
+    color: #6495ED; }
 
 @media screen and (max-width: 697px) {
   .principal h2 {
@@ -235,12 +290,22 @@ footer {
   .principal a {
     font-size: 15px; }
   .sponsors h2 {
-    font-size: 15px; } }
+    font-size: 15px; }
+  .contenedor-footer {
+    flex-direction: column;
+    align-items: center; }
+  .redes-footer {
+    padding: 0px;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 1rem; } }
 
 @media screen and (max-width: 1105px) {
   .lista-jugadores {
     flex-direction: column;
-    padding-left: 0; }
+    padding-left: 0;
+    gap: 2rem; }
     .lista-jugadores li {
       width: 100%; }
   .principal-equipo p {
@@ -264,7 +329,8 @@ footer {
 
 @media screen and (max-width: 900px) {
   .productos {
-    flex-direction: column; }
+    flex-direction: column;
+    gap: 2rem; }
   .container-banner-tienda {
     width: 100%;
     height: 213px;
