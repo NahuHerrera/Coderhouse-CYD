@@ -1,0 +1,18 @@
+.navegacion{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: #ffff;
+    width: 100%;
+    a{
+        &:hover{
+            color: $color-primario;
+        }
+    }
+}
+.logo-navbar{
+    transition: transform 300ms;
+    &:hover{
+        transform: scale(1.2);
+    }
+}
